@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 
 export interface Pessoa{
@@ -10,7 +11,7 @@ export interface Pessoa{
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -22,6 +23,12 @@ export class HomeComponent {
         idade:22,
         cidade: 'São Paulo',
         profissao: 'Desenvolvedor',
+    }
+
+    isPressed: boolean = false;
+
+    onPress(){
+        this.isPressed = !this.isPressed;
     }
 }
 

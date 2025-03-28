@@ -1,9 +1,12 @@
+<link rel="stylesheet" href="home.component.css">
+
 <p>home works!
 
 
 
 
 </p>
+<h1>Ola teste de texto</h1>
 
 <div>
 
@@ -16,3 +19,14 @@
 
     voce mora em {{usuario.cidade}}
 </div>
+
+<button (click)="onPress()">Este botao é para testar *nglf</button>
+
+<ng-template>
+    <p *ngIf="isPressed; else elseBlock">Se esta mostrando, nglf funcionou, senao, nglf nao funcionou</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    <p>Agora esta mostrando que o ngIf é falso.</p>
+</ng-template>
+
