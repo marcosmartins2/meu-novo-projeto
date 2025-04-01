@@ -29,4 +29,7 @@ export class TesteDiretivasComponent {
   trackById(index: number, pessoa: any): number {
     return pessoa.id;
   }
+
+
+   isRed: boolean = true;
 }

@@ -2,7 +2,6 @@
 
 <div>
 
-
 <ul>
 
     <li *ngFor="let pessoa of pessoas">
@@ -12,6 +11,19 @@
 
 
 </ul>
+
+
+<div>
+
+    <h1 [ngStyle]="{'color': isRed ? 'red' : 'blue'}">
+
+        teste de diretiva ngStyle
+
+    </h1>
+
+
+</div>
+
 
 
 </div>
